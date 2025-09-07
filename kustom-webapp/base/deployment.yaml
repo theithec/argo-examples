@@ -4,6 +4,10 @@ metadata:
   name: mywebapp
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: mywebapp
+      commit: HEAD
   template:
     spec: # Pod spec
       metadata:
