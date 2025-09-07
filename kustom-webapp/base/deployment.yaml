@@ -7,8 +7,9 @@ spec:
   template:
     spec: # Pod spec
       metadata:
-        name: mywebapp
-      containers:
+        labels:
+          app: mywebapp
+    containers:
       - name: mycontainer
         image: "devopsjourney1/mywebapp:latest"
         ports:
