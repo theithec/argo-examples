@@ -9,6 +9,7 @@ spec:
       metadata:
         labels:
           app: mywebapp
+          commit: HEAD
     containers:
       - name: mycontainer
         image: "devopsjourney1/mywebapp:latest"
